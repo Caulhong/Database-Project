@@ -1,0 +1,66 @@
+
+  .dashboard-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+
+  .dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+.dashboard-table tbody {
+    display: block;
+    max-height: 500px; 
+    overflow-y: auto;
+  }
+  
+  .dashboard-table thead, 
+  .dashboard-table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed; 
+  }
+  
+  .dashboard-table {
+    width: 100%;
+  }
+  
+
+  .dashboard-table th,
+  .dashboard-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  .dashboard-table th {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+  .dashboard-table tr:hover {
+    background-color: #f0f0f0;
+  }
+
+  .add-location-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .add-location-btn:hover {
+    background-color: #45a049;
+  }
+
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+
+
+  
