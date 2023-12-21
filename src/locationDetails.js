@@ -79,12 +79,18 @@ const LocationDetails = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({username})
+        body: JSON.stringify({username:username,
+            building_address: stateData.location.building_address, 
+            unit_number: stateData.location.unit_number})
       })
     .then(response => response.json())
     .then(data => {
       if (data.success) {
-        navigate('/show');
+        navigate('/show',{state: {
+          username:username,
+          buildingAddress: stateData.location.building_address, 
+          unitNumber: stateData.location.unit_number 
+        } });
         console.log('remove successful');
       } else {
         alert(data.message); 
